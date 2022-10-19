@@ -31,5 +31,11 @@ public class Calc {
         return total;
     }
 
+    public int multiply(int firstNumber, int secondNumber)
+    {
+        total = firstNumber * secondNumber;
+        return total;
+    }
+
 }
 
