@@ -22,6 +22,9 @@ class CalcTest {
     }
 
     @Test
+    void testSubtract(){assertEquals(2, myCalc.subtract(5,3));}
+
+    @Test
     void testConstructor()
     {
         assertThrows(IllegalArgumentException.class, ()-> {new Calc(4);} );

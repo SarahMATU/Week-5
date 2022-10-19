@@ -25,5 +25,11 @@ public class Calc {
         return total;
     }
 
+    public int subtract(int firstNumber, int secondNumber)
+    {
+        total = firstNumber - secondNumber;
+        return total;
+    }
+
 }
 
