@@ -25,11 +25,16 @@ class CalcTest {
     void testSubtract(){assertEquals(2, myCalc.subtract(5,3));}
 
     @Test
+    void testMultiply(){assertEquals(28, myCalc.multiply(7,4));}
+
+    @Test
+    void testDivide(){assertEquals(50, myCalc.divide(100, 2));}
+
+    @Test
     void testConstructor()
     {
         assertThrows(IllegalArgumentException.class, ()-> {new Calc(4);} );
     }
-
 
     @AfterEach
     void tearDown() {

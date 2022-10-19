@@ -31,5 +31,25 @@ public class Calc {
         return total;
     }
 
+    public int multiply(int firstNumber, int secondNumber)
+    {
+        total = firstNumber * secondNumber;
+        return total;
+    }
+
+    public int divide(int firstNumber, int secondNumber)
+    {
+        if(firstNumber == 0 || secondNumber == 0)
+        {
+            throw new IllegalArgumentException("This Number is not Valid");
+        }
+        else
+        {
+            total = firstNumber / secondNumber;
+        }
+        return total;
+    }
+
+
 }
 
